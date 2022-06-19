@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 15px;
+    padding-top: 5vh;
+}
+
+.sidebar ul {}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li h5 {
+    margin: 5px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 15px;
+}
