@@ -1,10 +1,16 @@
 import React from "react";
-import Button from "../components/Button";
-
+import { useRouter } from "next/router";
 import styles from "../styles/Post.module.css";
+import InteractiveBar from "./InteractiveBar";
 
-const Post = ({ postData: { id, author, date, content, likes, commentsCount } }) => {
-    return <div className={styles.container}>
+const PostCard = ({ postData: { id, author, date, content, likes, comments } }) => {
+
+    const router = useRouter();
+    const handleClick = id => {
+        router.push("/post/" + id)
+    }
+
+    return <div className={styles.container} onClick={() => handleClick(id)}>
         <div className={styles.head}>
             <div className={styles.author}>
                 <h4>{author}</h4>
@@ -17,13 +23,9 @@ const Post = ({ postData: { id, author, date, content, likes, commentsCount } })
 
             <p>{content}</p>
         </div>
-        <div className={styles["interactive-bar"]}>
-            <Button title="LIKE" />
-            <p>{likes} likes</p>
-            <Button title="COMMENT" />
-            <p>{commentsCount} comments</p>
-        </div>
+        <InteractiveBar likes={likes} commentsCount={comments.length} addLike={() => { }} />
+
     </div>
 }
 
-export default Post;
+export default PostCard;

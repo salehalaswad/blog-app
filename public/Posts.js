@@ -5,15 +5,17 @@ const DUMMY_POSTS = [
         date: "04.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
-            },
+                content: "Lorem ipsum dolor sit amet"
+            }, {
+                author: "Salah A.",
+                content: "Lorem ipsum dolor sit amet! :) Doloremque qui explicabo cumque! Tempora quia"
+            }
         ]
     }, {
         id: 2,
@@ -21,14 +23,13 @@ const DUMMY_POSTS = [
         date: "05.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -37,14 +38,13 @@ const DUMMY_POSTS = [
         date: "06.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -53,14 +53,13 @@ const DUMMY_POSTS = [
         date: "07.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -69,14 +68,13 @@ const DUMMY_POSTS = [
         date: "08.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -85,14 +83,13 @@ const DUMMY_POSTS = [
         date: "09.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -101,14 +98,13 @@ const DUMMY_POSTS = [
         date: "11.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -117,14 +113,13 @@ const DUMMY_POSTS = [
         date: "12.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -133,14 +128,13 @@ const DUMMY_POSTS = [
         date: "13.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     }, {
@@ -149,14 +143,13 @@ const DUMMY_POSTS = [
         date: "14.05.2022",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque qui explicabo cumque! Tempora quia temporibus aliquid cum amet, repellendus quaerat cupiditate voluptate adipisci. Cumque vel ut illo libero voluptate. Reiciendis?",
         likes: 207,
-        commentsCount: 43,
         comments: [
             {
                 author: "Omar N.",
-                comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
                 author: "Daniel M.",
-                comment: "Lorem ipsum dolor sit amet"
+                content: "Lorem ipsum dolor sit amet"
             },
         ]
     },

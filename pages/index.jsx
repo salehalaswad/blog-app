@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import DUMMY_NAMES from '../public/Names';
 import Button from "../components/Button";
-
+import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
       <Head>
         <title>Blogger</title>
       </Head>
+      <Header />
 
       <main className={styles.main}>
         <div className={styles.signin}>
