@@ -6,8 +6,9 @@ import InteractiveBar from "./InteractiveBar";
 const PostCard = ({ postData: { id, author, date, content, likes, comments } }) => {
 
     const router = useRouter();
+    const { query } = router;
     const handleClick = id => {
-        router.push("/post/" + id)
+        router.push("/post/" + id + "?name=" + query.name)
     }
 
     return <div className={styles.container} onClick={() => handleClick(id)}>

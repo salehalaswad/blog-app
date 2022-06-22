@@ -7,12 +7,39 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 11,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 12,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             }, {
+                id: 13,
+                author: "Salah A.",
+                content: "Lorem ipsum dolor sit amet! :) Doloremque qui explicabo cumque! Tempora quia"
+            }, {
+                id: 14,
+                author: "Omar N.",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            }, {
+                id: 15,
+                author: "Daniel M.",
+                content: "Lorem ipsum dolor sit amet"
+            }, {
+                id: 16,
+                author: "Salah A.",
+                content: "Lorem ipsum dolor sit amet! :) Doloremque qui explicabo cumque! Tempora quia"
+            }, {
+                id: 17,
+                author: "Omar N.",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            }, {
+                id: 18,
+                author: "Daniel M.",
+                content: "Lorem ipsum dolor sit amet"
+            }, {
+                id: 19,
                 author: "Salah A.",
                 content: "Lorem ipsum dolor sit amet! :) Doloremque qui explicabo cumque! Tempora quia"
             }
@@ -25,9 +52,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 20,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 21,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -40,9 +69,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 31,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 32,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -55,9 +86,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 40,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 41,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -70,9 +103,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 50,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 51,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -85,9 +120,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 60,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 61,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -100,9 +137,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 70,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 71,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -115,9 +154,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 80,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 81,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -130,9 +171,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 90,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 91,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },
@@ -145,9 +188,11 @@ const DUMMY_POSTS = [
         likes: 207,
         comments: [
             {
+                id: 100,
                 author: "Omar N.",
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             }, {
+                id: 101,
                 author: "Daniel M.",
                 content: "Lorem ipsum dolor sit amet"
             },

@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useRouter } from "next/router";
 import InteractiveBar from "./InteractiveBar";
 
 import styles from "../styles/SinglePost.module.css";
+import Button from "./Button";
 
 const SinglePost = ({ postData: { id, author, date, content, likes, comments } }) => {
+
+    const textAreaRef = useRef();
+
+    const router = useRouter();
+    const { query } = router;
+
     const [likesCount, setLikesCount] = useState(likes);
     const [liked, setLiked] = useState(false);
+    const [text, setText] = useState("");
+    const [stateComments, setStateComments] = useState(comments);
 
     const handleLikeClick = () => {
         if (!liked) {
@@ -14,6 +24,21 @@ const SinglePost = ({ postData: { id, author, date, content, likes, comments } }
         } else {
             setLikesCount(likesCount - 1)
             setLiked(false);
+        }
+    }
+    const handleCommentClick = () => {
+        const offsetBottom = textAreaRef.current.offsetTop + textAreaRef.current.offsetHeight;
+        window.scrollTo({ top: offsetBottom });
+    }
+    const handleTextChange = e => {
+        setText(e.target.value);
+    }
+    const postComment = () => {
+        if (text.trim().length != 0) {
+            setStateComments([...stateComments, {
+                author: query.name,
+                content: text
+            }]);
         }
     }
     return <div className={styles.container}>
@@ -28,15 +53,21 @@ const SinglePost = ({ postData: { id, author, date, content, likes, comments } }
 
             <p>{content}</p>
         </div>
-        <InteractiveBar likes={likesCount} commentsCount={comments.length} addLike={handleLikeClick} />
+        <InteractiveBar likes={likesCount} commentsCount={stateComments.length} addLike={handleLikeClick} showCommentBox={handleCommentClick} />
         <div className={styles.comments}>
-            <textarea type="text" className={styles.input} />
-            {comments.map(comment => (
-                <div className={styles.comment} key={comment.content}>
+
+            {stateComments.map(comment => (
+                <div className={styles.comment} key={comment.id}>
                     <h5>{comment.author}</h5>
                     <h6>{comment.content}</h6>
                 </div>
             ))}
+            <textarea ref={textAreaRef} type="text" className={styles.input} value={text} onChange={handleTextChange} />
+            <div className={styles.button}>
+                <Button title="post comment" onClick={postComment} />
+            </div>
+
+
         </div>
     </div>
 }

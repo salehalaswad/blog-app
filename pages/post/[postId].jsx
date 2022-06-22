@@ -5,7 +5,6 @@ import SinglePost from "../../components/SinglePost";
 import DUMMY_POSTS from "../../public/Posts";
 
 const Post = ({ post }) => {
-
     return <div>
         <Header />
         <SinglePost postData={post} />

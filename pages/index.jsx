@@ -17,7 +17,7 @@ export default function Home() {
   const handleButtonClick = () => {
     if (name.trim().length != 0) {
       DUMMY_NAMES.push(name);
-      router.push("/blogs");
+      router.push("/blogs?name=" + name);
     }
   }
   return (
@@ -31,9 +31,7 @@ export default function Home() {
         <div className={styles.signin}>
           <h3>NAME:</h3>
           <input type="text" className={styles.input} onChange={handleNameChange} />
-          {/* <Link href={href} > */}
           <Button type="button" title={"ENTER BLOGGER"} onClick={handleButtonClick} />
-          {/* </Link> */}
         </div>
       </main>
 
